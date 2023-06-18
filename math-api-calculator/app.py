@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import abort, Flask, request, jsonify
 import numpy as np
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ def get_request_numbers_quantifiers():
     quantifier = data.get('quantifier')
    
     if not numbers or not quantifier:
-        return jsonify({'error': 'Invalid request parameters'})
+        abort(400, 'Invalid request')
 
     return numbers, quantifier
 

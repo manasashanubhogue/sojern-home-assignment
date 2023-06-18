@@ -16,6 +16,14 @@ class AppTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data["min_numbers"], [1, 2])
 
+    def test_calculate_min_invalid(self):
+        payload = {
+            "numbers": [4, 2, 6, 1, 9]
+        }
+        response = self.app.post("/min", json=payload)
+        self.assertEqual(response.status_code, 400)
+
+
     def test_calculate_max(self):
         payload = {
             "numbers": [4, 2, 6, 1, 9],

@@ -27,3 +27,4 @@ python version_utility.py '2.2.5' '2.2.5'
 python version_utility.py '2.2.5' '2.2.5.1' 
 -1
 ```
+![Screenshot 2023-06-18 at 16 23 00](https://github.com/manasashanubhogue/sojern-home-assignment/assets/6822599/011b7589-bfbe-432b-a014-6a99c1be37cb)

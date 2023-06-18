@@ -1,5 +1,5 @@
 
-### 1. Web service with endpoints to do simple math operations using Nearest Rank Method
+###  Web service with endpoints to do simple math operations using Nearest Rank Method
 
 Endpoints:
 
